@@ -8,8 +8,8 @@
 </head>
 
 <body class="flex-container">
-	<header>
-		<nav>
+	<header style="flex-grow: 1">
+		<nav >
 			<div>
 				<a href="http://mail.google.com">Gmail</a>
 				<a href="http://www.google.com/imghp?hl=fr">Images</a>
@@ -17,20 +17,24 @@
 				<button class="btn_bleu">Connexion</button>
 			</div>
 		</nav>
-	</header>
-	<div id="gros_boutton" onclick="afficher()">AFFICHER LES ÉLÉMENTS CENTRAUX</div>
 
-	<form target="_blank" style="display:none" id="element_centraux" name="formulaire">
+		<div id="gros_boutton" onclick="afficher()">AFFICHER LES ÉLÉMENTS CENTRAUX</div>
+	</header>
+	
+
+	<form target="_blank" style="display:none" name="formulaire" style="flex-grow: 8" id="element_centraux">
+		<div id="element_centre">
 		<img src="googlelogo.png" alt="logo de google">
 		<input type="search" name="q"><br>
 		<button class="btn_centre">Recherche Google</button>
 		<!--<input type="submit" value="Recherche Google" id="submit" onclick="redirection()">-->
 		<button class="btn_centre">J'ai de la chance</button>
 		<p>Google disponible en&nbsp;: <a href="https://www.google.cm/setprefs?sig=0_rLYe4JoBYrfrqD1mx10WEJCg1rs%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwi7gcS4qqHaAhVPK1AKHZNbCp0Q2ZgBCAg">English</a></p>
+	</div>
 	</form>
 	
 
-	<footer>
+	<footer style="flex-grow: 1">
 		<p id="localisation" class="footer_bar">Cameroun</p>
 		<div class="footer_bar">
 			<a href="">Publicité</a>
